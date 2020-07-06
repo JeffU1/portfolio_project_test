@@ -30,6 +30,6 @@ def convertor_post():
     return render_template('result.html', number_decimal=request.form['number'], number_roman=result)
 
 if __name__ == '__main__':
-    #app.run(debug=True)
-    #app.run('localhost', port=5000, debug=True)
+    app.run(debug=True)
+    app.run('localhost', port=5000, debug=True)
     app.run('0.0.0.0', port=80)
